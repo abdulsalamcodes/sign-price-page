@@ -1,145 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="bootstrap-grid.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="bootstrap-grid.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-    background-color:  hsl(204, 43%, 93%);
-    padding: 0;
-    margin: 0;
-    color: #ffffff;
-}
+        <title>Frontend Mentor | Single Price Grid Component</title>
 
-.wrapper {
-    margin-top: 5%;
-    padding: 5%;
-    font-weight: 400;
-    font-family: 'Karla', sans-serif;
-}
-.box {
-    color: hsl(218, 22%, 67%);
-    margin: 0% 15%;
-}
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 700;
-}
-#section1 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: #ffffff;
-    padding: 30px 30px 30px 50px;
-}
-#section1 h3 {
-    color: hsl(71, 73%, 54%);
-}
-#section1 h2 {
-    color: hsl(179, 62%, 43%);
-}
- .left {
-    background-color: hsl(179, 62%, 43%);
-    border-bottom-left-radius: 15px;
-    padding: 30px 50px;
-    color: #ffffffd2;
-    
-}
-.left span {
-    font-size: 2rem;
-}
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            body {
+                background-color: hsl(204, 43%, 93%);
+                padding: 0;
+                margin: 0;
+                color: #ffffff;
+            }
 
- .right {
-    line-height: 1.5;
-    background-color: hsla(179, 62%, 43%, 0.781);
-    border-bottom-right-radius: 15px;
-    padding: 30px 70px 30px 50px;
-    color: #ffffff;
-}
-.right p {
-    color: #ffffff79;
-}
-button {
-    width: 100%;
-    border-radius: 7px;
-    border: none;
-    color: #ffffff;
-    background-color: hsl(71, 73%, 54%);
-    padding: 15px;
-    font-size: 1.1em;
-    box-shadow: 1px 1px 3px 3px #4244462d;
-}
+            .wrapper {
+                margin-top: 5%;
+                padding: 5%;
+                font-weight: 400;
+                font-family: 'Karla', sans-serif;
+            }
+            .box {
+                color: hsl(218, 22%, 67%);
+                margin: 0 15%;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+            #section1 {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                background-color: #ffffff;
+                padding: 30px 30px 30px 50px;
+            }
+            #section1 h3 {
+                color: hsl(71, 73%, 54%);
+            }
+            #section1 h2 {
+                color: hsl(179, 62%, 43%);
+            }
+            .left {
+                background-color: hsl(179, 62%, 43%);
+                border-bottom-left-radius: 15px;
+                padding: 30px 50px;
+                color: #ffffffd2;
 
-footer {
-    color: hsl(218, 22%, 67%);
-}
+            }
+            .left span {
+                font-size: 2rem;
+            }
 
-@media (max-width: 500px) {
-    #section1 {
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-    }
-    .left {
-        border-bottom-left-radius: 0px;
+            .right {
+                line-height: 1.5;
+                background-color: hsla(179, 62%, 43%, 0.781);
+                border-bottom-right-radius: 15px;
+                padding: 30px 70px 30px 50px;
+                color: #ffffff;
+            }
+            .right p {
+                color: #ffffff79;
+            }
+            button {
+                width: 100%;
+                border-radius: 7px;
+                border: none;
+                color: #ffffff;
+                background-color: hsl(71, 73%, 54%);
+                padding: 15px;
+                font-size: 1.1em;
+                box-shadow: 1px 1px 3px 3px #4244462d;
+            }
 
-    }
-    .right {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+            footer {
+                color: hsl(218, 22%, 67%);
+            }
 
-    }
-    .wrapper {
-        padding: 3% 3% 10px;
-    }
-    .box {
-        margin: 0;
-    }
-}
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container wrapper">
-    <div class="row box">
-      <div id="section1" class="col-12">
-        <h2>Join our community</h2>
-        <h3>30-day, hassle-free money back guarantee</h3>
-        
-        <p>Gain access to our full library of tutorials along with expert code reviews.</p> 
-         <p> Perfect for any developers who are serious about honing their skills.</p>
-      </div>
-      <div class="col-lg-6 left">
-            <h3>Monthly Subscription</h3>  
-            <p><span>&dollar;29</span>  per month </p> 
-            <p> Full access for less than &dollar;1 a day</p> 
-            <button>Sign Up</button>
+            @media(max-width: 991px) {
+                #section1 {
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+                .left {
+                    border-bottom-left-radius: 0;
+
+                }
+                .right {
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+
+                }
+               #section1, .right, .left {
+                   padding: 30px 20px;
+               }
+                .box {
+                    margin: 0 30px;
+                }
+            }
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container wrapper">
+            <div class="row box">
+                <div id="section1" class="col-12">
+                    <h2>Join our community</h2>
+                    <h3>30-day, hassle-free money back guarantee</h3>
+
+                    <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+                    <p>
+                        Perfect for any developers who are serious about honing their skills.</p>
+                </div>
+                <div class="col-lg-6 left">
+                    <h3>Monthly Subscription</h3>
+                    <p>
+                        <span>&dollar;29</span>
+                        per month
+                    </p>
+                    <p>
+                        Full access for less than &dollar;1 a day</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="col-lg-6 right">
+                    <h3>Why Us</h3>
+                    <p>
+                        Tutorials by industry experts
+                                    Peer &amp; expert code review
+                                    Coding exercises
+                                    Access to our GitHub repos
+                                    Community forum
+                                    Flashcard decks
+                                    New videos every week
+                    </p>
+                </div>
+                <!--right section ends-->
+            </div>
         </div>
-        <div class="col-lg-6 right">
-          <h3>Why Us</h3>
-          <p>
-            Tutorials by industry experts
-            Peer &amp; expert code review
-            Coding exercises
-            Access to our GitHub repos
-            Community forum
-            Flashcard decks
-            New videos every week
-          </p>
-        </div> <!--right section ends-->
-      </div>
-  </div>  <!-- container ends -->
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <!-- container ends -->
+        <footer>
+            <p class="attribution">
+                Challenge by
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                          Coded by
+                <a href="#">Your Name Here</a>.
+            </p>
+        </footer>
+    </body>
 </html>
